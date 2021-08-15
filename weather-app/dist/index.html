@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <style>
+  body  {
+      background-image: url("weather1.jpg");
+      background-color: #cccccc;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  </style>
+
+  <body class="container">
+
+    <div class=welcome>
+      <h1>Welcome!</h1>
+      <h3>Would you like to know more about the weather?</h3>
+    </div>
+
+    <div class=welcome-back>
+      <h1>Welcome back!</h1>
+    </div>
+
+    <form class="form-data" autocomplete="on">
+      <div class="enter-location">
+        Please enter your location (city name and country code) to get more information:
+      </div>
+      <br />
+      <div>
+        <input type="text" class="city-name" />
+      </div>
+      <div>
+        <input type="text" class="country-code" />
+      </div>
+      <br />
+      <button class="search-btn">Show Weather</button>
+    </form>
+
+    <div class="result">
+      <div class="loading">Loading, please wait...</div>
+      <div class="errors"></div>
+      <div class="data"></div>
+
+      <div class="weather-result-container">
+        Here is the current weather in <span class="current-city"></span>, <span class="current-country"></span>:
+        <p><strong>Date: </strong><span class="current-date"></span></p>
+        <p><strong>Temperature: </strong><span class="current-temp"></span></p>
+        <p><strong>Humidity: </strong><span class="current-humidity"></span></p>
+      </div>
+
+      <br />
+
+      <div>
+        <button class="location-btn">Reset My Location</button>
+      </div>
+      
+      <br />
+      <br />
+      <br />
+
+
+      <form class="form-data-forecast" autocomplete="on">
+        <h3>Interested in getting the forecast?</h3>
+        <div class="enter-days">
+          Please enter the number of days for the forecast: (the limit is 5 days)
+        </div>
+        <br />
+        <div>
+          <input type="text" class="days" />
+        </div>
+        <br />
+        <button class="forecast-btn">Show Forecast</button>
+        <br />
+      </form>
+
+      <br />
+      <div class="loading-forecast">Loading forecast, please wait...</div>
+      <br />
+      <div class="errors-forecast"></div>
+
+
+      <div class="forecast-result-container">
+        Here is the forecast for the next <span class="days"></span> days:
+        <div class="day-1">
+          <p><strong>Date: </strong><span class="date-day-1"></span></p>
+          <p><strong></strong>Day Temperature: </strong><span class="temp-day-1"></span>
+          <strong>Min Temperature: </strong><span class="min-temp-day-1"></span>
+          <strong>Max Temperature: </strong><span class="max-temp-day-1"></span></p>
+        </div>
+        <div class="day-2">
+          <p><strong>Date: </strong><span class="date-day-2"></span></p>
+          <p><strong>Day Temperature: </strong><span class="temp-day-2"></span>
+          <strong>Min Temperature: </strong><span class="min-temp-day-2"></span>
+          <strong>Max Temperature: </strong><span class="max-temp-day-2"></span></p>
+        </div>
+        <div class="day-3">
+          <p><strong>Date: </strong><span class="date-day-3"></span></p>
+          <p><strong>Day Temperature: </strong><span class="temp-day-3"></span>
+          <strong>Min Temperature: </strong><span class="min-temp-day-3"></span>
+          <strong>Max Temperature: </strong><span class="max-temp-day-3"></span></p>
+        </div>
+        <div class="day-4">
+          <p><strong>Date: </strong><span class="date-day-4"></span></p>
+          <p><strong>Day Temperature: </strong><span class="temp-day-4"></span>
+          <strong>Min Temperature: </strong><span class="min-temp-day-4"></span>
+          <strong>Max Temperature: </strong><span class="max-temp-day-4"></span></p>
+        </div>
+        <div class="day-5">
+          <p><strong>Date: </strong><span class="date-day-5"></span></p>
+          <p><strong>Day Temperature: </strong><span class="temp-day-5"></span>
+          <strong>Min Temperature: </strong><span class="min-temp-day-5"></span>
+          <strong>Max Temperature: </strong><span class="max-temp-day-5"></span></p>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
